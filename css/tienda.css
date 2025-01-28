@@ -1,27 +1,111 @@
-*{
-    border: 1px solid black;
+/* Reset general de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-header{
+
+/* Fuente general */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Contenedor principal */
+.container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Cabecera */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
 }
-header i{
+
+header i {
     font-size: 30px;
-   
 }
-.container{
-    width: 80%;
-    margin: 0 auto;
+
+header p {
+    font-size: 18px;
+    font-weight: bold;
 }
-main{
+
+/* Menú lateral */
+aside {
+    background-color: #2f3640;
+    width: 250px;
+    padding-top: 20px;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin: 20px 0;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #ecf0f1;
     display: flex;
-    flex-wrap: nowrap;
+    align-items: center;
+    font-size: 16px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
 }
-main aside{
-    width: 30%;
+
+aside ul li a:hover {
+    background-color: #1e2a37;
 }
-main section{
-    width: 70%;
-    
+
+aside ul li a i {
+    margin-right: 10px;
+}
+
+/* Sección principal */
+main {
+    display: flex;
+    flex-grow: 1;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+section {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos para los enlaces */
+a {
+    color: #3498db;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9;
 }
